@@ -12,11 +12,13 @@
   "author": "Imran Khan",
   "license": "ISC",
   "dependencies": {
-    "fs": "*",
+    "axios": "^0.16.2",
+    "babel-runtime": "^6.23.0",
+    "fs": "0.0.2",
     "pakmanager": "^0.12.1",
-    "path": "*",
+    "path": "^0.12.7",
     "request": "^2.81.0",
-    "babel-runtime": "^6.11.6"
+    "request-promise": "^4.2.1"
   },
   "browserDependencies": {},
   "scripts": {
