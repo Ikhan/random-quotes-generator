@@ -12,4 +12,3 @@ const axios = require('axios')
 }
 
 quotes();
-
