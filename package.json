@@ -1,6 +1,6 @@
 {
   "name": "iterm_quotes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "simple quotes generator whenever iterm opens up",
   "main": "index.js",
   "keywords": [
