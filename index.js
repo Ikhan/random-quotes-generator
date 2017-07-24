@@ -1,28 +1,14 @@
-const request = require('request');
-const pathModule = require('path');
-const fs = require('fs');
-
-const quotes = require('./quotes.json');
-
-const quoteArray  = []
-
-// console.log(typeof(quotes));
+const axios = require('axios')
 
 
+ const quotes = async function () {
+	const res =  await axios.get('https://talaikis.com/api/quotes/random/');
 
-quotes.forEach(function(quote){
-	// const authorName = quote.author;
-	// const quote = quote.desc;	
-	quoteArray.push({
-		'author': quote.author,
-		'quote' : quote.desc
-	});
-})
+	console.log(`
+					###################################################################################################
+							${res.data.quote} -- ${res.data.author}
+					###################################################################################################
+			`);
+}
 
-let random = quoteArray[Math.floor(Math.random() * quoteArray.length)];
-
-console.log(`
-			###################################################################################################
-					${random.quote} -- ${random.author}
-			###################################################################################################
-`);
+quotes();
